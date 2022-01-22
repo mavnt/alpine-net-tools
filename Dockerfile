@@ -1,16 +1,16 @@
 FROM alpine:3.9.5
 RUN apk add --no-cache \
-    curl>=7.64.0-r3 \
-    bind-tools>=9.14.12-r0 \
-    git>=2.20.2-r0 \
-    jq>=1.6-r0 \
-    mtr>=0.92-r0 \
-    nano>=3.2-r0 \
-    openssh-server>=7.9_p1-r6 \
-    openssh>=7.9_p1-r6 \
-    python>=2.7.16-r2 \
-    wget>=1.20.3-r0 \
-    zsh>=5.6.2-r0
+    curl \
+    bind-tools \
+    git \
+    jq \
+    mtr \
+    nano \
+    openssh-server \
+    openssh \
+    python \
+    wget \
+    zsh
 
 RUN mkdir /root/.ssh && ssh-keygen -A \
     && sed -i 's/^#PasswordAuthentication\ yes/PasswordAuthentication\ no/' /etc/ssh/sshd_config \
