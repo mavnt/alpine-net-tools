@@ -1,5 +1,5 @@
 Welcome to alpine-net-tools!
 Installed packages and features:
-  - curl, wget, ssh&sshd, sshuttle-enabled (python2), mtr
-  - git, jq, nano
-  - zsh with Oh My Zsh
+  + curl, wget, ssh&sshd, sshuttle-enabled (python3), mtr
+  + git, jq, nano
+  + zsh with Oh My Zsh
